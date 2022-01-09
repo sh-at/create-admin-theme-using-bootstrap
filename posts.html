@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin dashboard</title>
+    <title>admin page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
@@ -48,7 +48,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-10">
-              <h1><i class="fas fa-cog "></i> Dashboard <span class="small">Manage Your Site</span></h1>
+              <h1><i class="fas fa-cog "></i> Posts<span class="small">Manage Your Posts</span></h1>
             </div>
             <div class="col-md-2">
                 <div class="dropdown  create">
@@ -68,14 +68,16 @@
         </div>
       </header>
 <!--header section end-->
-<section id="breadcrumb">
-    <div class="container">
-      <ol class="breadcrumb">
-        <li class="active">Dashboard</li>
-      </ol>
+  <nav id="breadcrumb">
+      <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+      <li class="breadcrumb-item"><a href="pages.html">Pages</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Posts</li>
+    </ol>
     </div>
-  </section>
-  
+  </nav>
+
     <!---main section-->
    <section class="main">
        <div class="container">
@@ -100,81 +102,46 @@
             </div>
 <!--website overview-->
             <div class="col-md-9">
-                <div class="card mb-4">
-    <h5 class="card-header main-color-bg">Website Overview</h5>
-    <div class="card-body">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card text-center">
-                <div class="card-body  card-bg">
-                    <h2 class="card-title"><i class="fas fa-users fa-1x" ></i>550</h2>
-                    <h4>Users</h4>
-                </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body card-bg">
-                        <h2 class="card-title"><i class="fas fa-list-alt fa-1x" ></i>15</h2>
-                        <h4>Pages</h4>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card text-center">
-                        <div class="card-body card-bg">
-                            <h2 class="card-title"><i class="fas fa-pencil fa-1x" ></i>35</h2>
-                            <h4>Posts</h4>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card text-center">
-                            <div class="card-body card-bg">
-                                <h2 class="card-title"><i class="fas fa-poll fa-1x"></i>12,234</h2>
-                                <h4>Visitors</h4>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-        </div>
-        </div>
-        <!--latest user-->
-        <div class="card">
-            <h5 class="card-header">Latest Users</h5>
-            <div class="card-body">
-                <table class="table table-striped table-hover">
-                    <tr>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Joined</th>
-                    </tr>
-                    <tr>
-                      <td>Jill Smith</td>
-                      <td>jillsmith@gmail.com</td>
-                      <td>Dec 12, 2016</td>
-                    </tr>
-                    <tr>
-                      <td>Eve Jackson</td>
-                      <td>ejackson@yahoo.com</td>
-                      <td>Dec 13, 2016</td>
-                    </tr>
-                    <tr>
-                      <td>John Doe</td>
-                      <td>jdoe@gmail.com</td>
-                      <td>Dec 13, 2016</td>
-                    </tr>
-                    <tr>
-                      <td>Stephanie Landon</td>
-                      <td>landon@yahoo.com</td>
-                      <td>Dec 14, 2016</td>
-                    </tr>
-                    <tr>
-                      <td>Mike Johnson</td>
-                      <td>mjohnson@gmail.com</td>
-                      <td>Dec 15, 2016</td>
-                    </tr>
-                  </table>
+<div class="card">
+<h5 class="card-header main-color-bg">Posts</h5>
+<div class="card-body">
+    
+    <div>
+     <input class="form-control" type="text" placeholder="Filter Posts...">
+    </div>
+    <br>
+    <table class="table table-striped table-hover">
+        <tr>
+            <th>Title</th>
+            <th>Published</th>
+            <th>Created</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Blog Post 1</td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td>Dec 12, 2019</td>
+            <td><a class="btn btn-light" href="edit.html" role="button">Edit</a> <a class="btn btn-danger" href="#" role="button">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Blog Post 2</td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td>Dec 13, 2019</td>
+            <td><a class="btn btn-light" href="edit.html" role="button">Edit</a> <a class="btn btn-danger" href="#" role="button">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Blog Post 3</td>
+            <td><i class="fas fa-times" aria-hidden="true"></i></td>
+            <td>Dec 14, 2019</td>
+            <td><a class="btn btn-light" href="edit.html" role="button">Edit</a> <a class="btn btn-danger" href="#" role="button">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Blog Post 4</td>
+            <td><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td>Dec 15, 2019</td>
+            <td><a class="btn btn-light" href="edit.html" role="button">Edit</a> <a class="btn btn-danger" href="#" role="button">Delete</button></td>
+          </tr>
+        </table>
             </div>  
             </div>
           </div>

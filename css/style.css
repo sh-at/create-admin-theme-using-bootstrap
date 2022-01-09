@@ -22,9 +22,10 @@ body{
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
-.btn{
+.btn1{
     background: #ffffff;
     color: #000;
+    padding:10px;
 }
 .small{
     font-size:25px;
